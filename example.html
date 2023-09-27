@@ -45,7 +45,7 @@
         .form-signin .checkbox {
             margin: 10px;
             display: flex; 
-            align-items: center;
+            justify-content: center;
         }
 
         .form-signin .text-muted {
@@ -67,11 +67,11 @@
     <h2 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox mb-3">
-        <label>
-            <input type="checkbox" value="remember-me"> Remember me
-        </label>
-    </div>
+<div class="checkbox mb-3">
+    <label style="display: flex; align-items: center;">
+        <input type="checkbox" value="remember-me"> <span style="white-space: nowrap;">Remember me</span>
+    </label>
+</div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2017-2022</p>
 </form>
