@@ -1,0 +1,35 @@
+<form>
+    <fieldset>
+        <legend>초밥 고르기</legend>
+        <label for="sushi_name">초밥 이름:        </label>
+        <input type="text" id="sushi_name" name="sushi_name"><br><br>
+
+        <label>생선선택:        </label>
+        <input type="radio" id="nigiri" name="sushi_type" value="Nigiri">니기리즈시
+        <input type="radio" id="oshi" name="sushi_type" value="Oshi">오시즈시
+        <input type="radio" id="maki" name="sushi_type" value="Maki">마키<br><br>
+
+        <label>조미료선택:        </label>
+        <input type="checkbox" id="wasabi" name="sesoning" value="Wasabi">와사비
+        <input type="checkbox" id="salt" name="sesoning" value="Salt">소금
+        <input type="checkbox" id="soy" name="sesoning" value="Soy">간장<br><br>
+
+        <label for="reservation">예약날짜:        </label>
+        <input type="date" id="reservation" name="reservation"><br><br>
+
+        <label>생선선택:        </label>
+        <select name="fish">
+            <option value="1">광어</option>
+            <option value="2">참치</option>
+            <option value="3">전어</option>
+            <option value="4">새우</option>
+            <option value="5">금태</option>
+            <option value="6">붕장어</option>
+        </select>
+
+        <p>요청사항</p>
+        <textarea name="request" cols="40" rows="5"></textarea>
+    </fieldset><br>
+    <input type="submit" value="완료"> <input type="reset" value="취소"><br>
+
+</form>
