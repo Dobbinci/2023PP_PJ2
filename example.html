@@ -15,14 +15,6 @@
             margin: 0;
         }
 
-        .form-signin {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            width: 300px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
         .form-signin img {
             display: block;
             margin: 0 auto 20px;
@@ -31,9 +23,8 @@
         .form-signin input {
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 3px;
         }
 
         .form-signin button {
@@ -52,24 +43,29 @@
         }
 
         .form-signin .checkbox {
-            margin: 10px 0;
+            margin: 10px;
+            display: flex; 
+            align-items: center;
         }
 
         .form-signin .text-muted {
-            text-align: center;
+            text-align: center;             
             display: block;
             margin-top: 20px;
             color: #666;
+        }
+        .form-signin h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: normal;
         }
     </style>
 </head>
 <body>
 <form class="form-signin">
     <img class="mb-4" src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
+    <h2 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
     <div class="checkbox mb-3">
         <label>
